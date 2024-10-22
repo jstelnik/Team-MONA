@@ -1,9 +1,14 @@
+import SearchBar from "./components/searchbar";
+import { log } from "./lib/logger";
+
 function App() {
+  log.debug("Hello, world!");
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="text-3xl font-bold underline">Hello, world!</div>
+    <div>
+      <SearchBar/>
     </div>
   );
 }
 
 export default App;
+
